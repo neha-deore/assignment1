@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form fields</title>
+    </head>
+   
+        <body>
+            <h2> Registration Form Details</h2>
+            <form method="post">
+                <table>
+                <tr><td><label for="fname">First Name: </label></td><td><input type="textbox"  name="name" id="fname" placeholder="Enter firstname" required pattern="[a-zA-Z ]+"></td></tr>
+                <tr><td ></td></tr>
+                <tr><td><label for="lname">Last Name: </label></td><td><input type="textbox"  name="name" id="lname" placeholder="Enter Lastname" ></td></tr>
+                <tr><td ></td></tr>
+                <tr><td><label for="email">Email id: </label></td><td><input type="textbox"  name="mail" id="email" placeholder="Enter mailid" required pattern="[a-z0-9.]+[@][a-z.]+" ></td></tr>
+                <tr><td ></td></tr>
+                <tr><td><label for="pwd">Password: </label></td><td><input type="password" id="pwd" name="pass" ></td></tr>
+                <tr><td ></td></tr> 
+                <tr><td><label for="gender">Choose Gender: </label></td><td><input type="radio"  name="gen" value="male">Male</td></tr>
+                <tr><td ></td></tr>
+                <tr><td><label for="gender">Choose Gender: </label></td><td><input type="radio"  name="gen" value="female">Female</td></tr>
+                <tr><td ></td></tr>
+                <tr><td><label for="age">Enter Age:</label></td><td><input type="textbox" name="age" required pattern="[0-9]{1,2}"></td></tr>
+                <tr><td><label for="country">Choose Country:</label></td><td>
+                    <select name="country">
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Germany">Germany</option>
+                </select></td></tr>
+                <tr><td><label for="hobbies">Hobbies:</label></td><td>
+                    <input type="checkbox" name="c1" value="TT">TT
+                    <input type="checkbox" name="c1" value="bb">baseball
+                    <input type="checkbox" name="c1" value="cricket">cricket
+                </td></tr>
+                <tr><td><label for="attach">Attach:</label></td><td><input type="file" name="att"></td></tr>
+                <tr><td><label for="aboutus">About Us:</label></td><td><input type="textarea"></td></tr>
+                <tr><td><label for="feedback"> Feedback:</label></td><td><input type="textarea" name="Feedback" required  minlength="50" maxlength="250"></td></tr>
+                <tr><td><input type="Submit" value ="Submit"> 
+                <input type="reset"></td></tr>
+                </table>
+            </form>
+           
+    </body>
+</html>

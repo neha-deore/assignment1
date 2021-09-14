@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>html5-form tags</title>
+    </head>
+    <body>
+        <h2>NEW Html5 Form Tags</h2>
+        <form method="post">
+        Fname:<input type="textbox" name="fname" required pattern="[a-zA-Z ]+"><br><br>
+        Age:<input type="textbox" name="age" required pattern="[0-9]{1,2}"><br><br>
+        Email:<input type="textbox" name="email" required pattern="[a-z0-9.]+[@][a-z.]+"><br><br>
+        Feedback:<input type="textarea" name="Feedback" required  minlength="50" maxlength="250"><br><br>
+        DOB:<input type="date" name="date" required><br><br>
+        Time:<input type="time"><br><br>
+        URL:<input type="url"><br><br>
+        Week:<input type="week"><br><br>
+        Color:<input type="color"><br><br>
+        Search:<input type="search"><br><br>
+        ComboBox:<input type="text" list="combolist">
+        <datalist id="combolist">
+            <option>Neha</option>
+            <option>Rutu</option>
+            <option>Riya</option>
+        </datalist><br><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+        </form>
+        </body>
+        </html>
+    
